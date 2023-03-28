@@ -29,6 +29,9 @@ html{
 body{
     line-height: 1.4;
 }
+.play__item .img img{
+    width: 15%;
+}
 .img{
     width: 100%;
     height: 100%;
@@ -44,17 +47,20 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.nav__logo h2{
+.nav__logo span{
     color: #17A2B8;
     font-family: var(--ubuntu);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+}
+.nav__logo .img img{
+    width: 5%;
 }
 .nav__bar a{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #17A2B8;
     font-family: var(--sanspro);
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: all 0.8s linear;
 }
 .nav__bar a:hover, a:focus{
@@ -70,7 +76,8 @@ body{
     font-family: var(--mono);
     font-size: 1rem;
     border-radius:100px ;
-    transition: 0.4s;
+    transition: all 0.4s linear;
+    display: none;
 }
 .nav__bar button:hover{
     background-color: #19707d;
@@ -187,10 +194,10 @@ body{
     font-family:var(--monster);
     margin-bottom: 2rem;
 }
-.img__item h4{
+.img__item i {
     margin-bottom:1rem;
     color: #17A2B8;
-    font-family: var(--mono);
+    font-size: 0.7rem;
     border-bottom: 2px solid #adb3b4;
     border-top: 2px solid #adb3b4;
 }
@@ -250,6 +257,9 @@ body{
     font-family: var(--lato);
     width: 80%;
     margin-bottom: 2rem;
+}
+.book__item i {
+    color: green;
 }
 .book__item span{
     color: #787878; 
@@ -503,6 +513,16 @@ body{
 
 .footer__form button:hover{
     background-color: #1d4146;
+}
+.footer__item i{
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+.footer__item i:hover{
+    color: red;
+    font-size: 1.8rem;
 }
 .text{
     width: 100%;
